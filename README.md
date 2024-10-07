@@ -1,2 +1,3 @@
 # Lucy-Ima-online-clothing-store
-TEAM WORK.
+TEAM WORK/ E-Commerce Store
+
