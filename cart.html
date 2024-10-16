@@ -3,18 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lucy and Ima Store.</title>
+        <title>Lucy and Ima Store</title>
         <link rel="stylesheet" href="./src/css/main.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/svg+xml" href="./images/header/favicon.svg">
     </head>
     <body>
-        <img src="./images/header/headerprod.jpg" style="display: none;">
-        <div class="header">
+        <!-- Preload hidden image for faster page load -->
+        <img src="./images/header/headerprod.jpg" style="display: none;" alt="Product Preview">
+        
+        <!-- Header Section -->
+        <header class="header">
             <div class="container">
                 <div class="navbar">
                     <div class="logo">
-                        <a href="./index.html"><img src="./images/header/complogo.png" alt="comp" width="225px"></a>
+                        <a href="./index.html"><img src="./images/header/complogo.png" alt="Company Logo" width="225px"></a>
                     </div>
                     <nav>
                         <ul class="nav-menu">
@@ -24,24 +27,33 @@
                             <li class="nav-item"><a href="account.html">Account</a></li>
                         </ul>
                     </nav>
-                    <a href="./cart.html"><img class="cart" src="./images/header/cart.svg"></a>
+                    <a href="./cart.html"><img class="cart" src="./images/header/cart.svg" alt="Cart"></a>
                     <div class="toggle"><i class="fa fa-bars"></i></div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="formPage">
+        </header>
+        
+        <!-- Main Content Section -->
+        <main class="container">
+            <section class="formPage">
                 <h2>You aren't logged in. You need an account to add items/view your cart.</h2>
-                <div class="btn"><a href="./account.html">My Account</a></div>
-            </div>
-        </div>
-        <div class="footer" id="footer">
+                <div class="btn">
+                    <a href="./account.html">My Account</a>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer Section -->
+        <footer class="footer" id="footer">
             <div class="container">
-                <div class="child">
+                <div class="footer-content">
+                    <!-- Logo and Contact -->
                     <div class="footerChild1">
-                        <img src="./images/header/complogo.png">
+                        <img src="./images/header/complogo.png" alt="Company Logo">
                         <h4>Mail us at: <a href="mailto:wambuilucie99@gmail.com">wambuilucie99@gmail.com</a></h4>
                     </div>
+                    
+                    <!-- Footer Links -->
                     <div class="footerChild2">
                         <h3>Help</h3>
                         <ul>
@@ -51,31 +63,37 @@
                             <li><a href="linkgoeshere">FAQ Topics</a></li>
                         </ul>
                     </div>
+                    
+                    <!-- Social Links -->
                     <div class="footerChild2">
                         <h3>Our Socials</h3>
                         <ul>
                             <li><a href="linkgoeshere">Instagram</a></li>
                             <li><a href="linkgoeshere">Facebook</a></li>
                             <li><a href="linkgoeshere">Twitter</a></li>
-                            <li><a href="linkgoeshere">Linkedin</a></li>
+                            <li><a href="linkgoeshere">LinkedIn</a></li>
                         </ul>
                     </div>
+                    
+                    <!-- Address -->
                     <div class="footerChild2">
                         <h3>Registered Office</h3>
                         <ul>
                             <li>Apartment A13, Floor 15,</li>
                             <li>Sunnyvale Park,</li>
                             <li>Ilinois, CA.</li>
-                            <li>-</li>
                         </ul>
                     </div>
                 </div>
+                <!-- Footer Bottom Text -->
                 <div class="belowfooter">
                     &copy; Lucy and Ima, 2024 <br>
-                   Where Fashion Meets Comfort, All rights reserved.
+                    Where Fashion Meets Comfort, All rights reserved.
                 </div>
             </div>
-        </div>
+        </footer>
+        
+        <!-- Script Inclusion -->
         <script src="./src/js/script.js"></script>
     </body>
 </html>
