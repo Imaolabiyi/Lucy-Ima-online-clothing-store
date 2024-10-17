@@ -76,7 +76,7 @@ nav ul li {
 }
 
 .child {
-    margin: 30px auto;
+    margin: 5px auto;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -318,7 +318,8 @@ select, select option  {
 }
 
 .single-product .halfchild img {
-    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20;
 }
 
 .single-product .halfchild {
@@ -446,7 +447,7 @@ select, input {
         font-size: 32px;
     }
     .child .logo img {
-        margin: 20px 20px;
+        margin: 2% 20px;
     }
 }
 
