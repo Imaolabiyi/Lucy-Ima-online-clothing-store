@@ -9,15 +9,14 @@
     <link rel="icon" type="image/svg+xml" href="./images/header/favicon.svg">
 </head>
 <body>
-    <!-- Preload hidden image for faster page load -->
-    <img src="./images/header/headerprod.jpg" style="display: none;" alt="Product Preview">
-    
-    <!-- Header Section -->
     <header class="header">
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <a href="./index.html"><img src="./images/header/complogo.png" alt="Company Logo" width="225"></a>
+                    <a href="./index.html">
+                        <!-- <src img ="./images/header/complogo.png" alt="Company Logo" width="225"> -->
+                            <img src="./src/images/header/complogo.png" width="225" alt="Company logo">
+                    </a>
                 </div>
                 <nav>
                     <ul class="nav-menu">
@@ -27,7 +26,10 @@
                         <li class="nav-item"><a href="account.html">Account</a></li>
                     </ul>
                 </nav>
-                <a href="./cart.html" class="cart-link" aria-label="View Cart"><img class="cart" src="./images/header/cart.svg" alt="Cart"></a>
+                <a href="./cart.html" class="cart-link">
+                    <!-- <img class="cart" src="./images/header/cart.svg" alt="Cart"> -->
+                     <img src="./src/images/header/cart.svg" alt="">
+                </a>
                 <div class="toggle"><i class="fa fa-bars"></i></div>
             </div>
         </div>
@@ -43,17 +45,13 @@
         </section>
     </main>
     
-    <!-- Footer Section -->
-    <footer class="footer" id="footer">
+    <div class="footer" id="footer">
         <div class="container">
-            <div class="footer-content">
-                <!-- Logo and Contact -->
+            <div class="child">
                 <div class="footerChild1">
-                    <img src="./images/header/complogo.png" alt="Company Logo">
-                    <h4>Mail us at: <a href="mailto:wambuilucie99@gmail.com">wambuilucie99@gmail.com</a></h4>
+                    <img src="src/images/header/complogo.png">
+                    <h4>Mail us at: <a href="mailto:hannes@hannesdev.xyz">hannesc@hannesdev.xyz</a></h4>
                 </div>
-                
-                <!-- Footer Links -->
                 <div class="footerChild2">
                     <h3>Help</h3>
                     <ul>
@@ -63,34 +61,30 @@
                         <li><a href="linkgoeshere">FAQ Topics</a></li>
                     </ul>
                 </div>
-                
-                <!-- Social Links -->
                 <div class="footerChild2">
                     <h3>Our Socials</h3>
                     <ul>
-                        <li><a href="linkgoeshere">Instagram</a></li>
-                        <li><a href="linkgoeshere">Facebook</a></li>
-                        <li><a href="linkgoeshere">Twitter</a></li>
-                        <li><a href="linkgoeshere">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/sharonolabiyi/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/sharon.offiong" target="_blank">Facebook</a></li>
+                        <li><a href="https://x.com/ImaOlabiyi/" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/in/ima-olabiyi-okon/" target="_blank">Linkedin</a></li>
                     </ul>
                 </div>
-                
-                <!-- Address -->
                 <div class="footerChild2">
                     <h3>Registered Office</h3>
                     <ul>
                         <li>Apartment A13, Floor 15,</li>
-                        <li>Sunnyvale Park,</li>
-                        <li>Illinois, CA.</li>
+                        <li>Ganaja Junction,</li>
+                        <li>Lokoja.</li>
                     </ul>
                 </div>
             </div>
             <div class="belowfooter">
-                &copy; Lucy and Ima, 2024 <br>
-                Where Fashion Meets Comfort, All rights reserved.
+                © Hannes &amp; Co. Associates, 2023 <br>
+                Aditya Chakravorty, All rights reserved.
             </div>
         </div>
-    </footer>
+    </div>
     
     <!-- Script Inclusion -->
     <script type="module" src="./src/js/main.js"></script>
