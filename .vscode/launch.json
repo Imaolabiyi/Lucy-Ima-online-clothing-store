@@ -1,0 +1,50 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "name": ".NET Core Attach",
+      "type": "coreclr",
+      "request": "attach"
+    },
+    {
+        "name": ".NET Core Attach",
+        "type": "coreclr",
+        "request": "attach"
+    },
+    {
+        "name": ".NET Core Attach",
+        "type": "coreclr",
+        "request": "attach"
+    },
+    {
+        "name": ".NET Core Attach",
+        "type": "coreclr",
+        "request": "attach"
+    },
+    {
+      "name": ".NET Core Attach",
+      "type": "coreclr",
+      "request": "attach"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/dist/bundle.js", // Adjust path based on your build output
+      "outFiles": [
+        "${workspaceFolder}/dist/**/*.js" // Match your transpiled JS files
+      ],
+      "preLaunchTask": "build", // Optional: If you have a task to build the project first
+      "sourceMaps": true, // Enable if using TypeScript or transpilers (e.g., Babel)
+      "env": {
+        "NODE_ENV": "development" // Set environment variables if needed
+    }
+  
+  }
+]
+}
+

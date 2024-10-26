@@ -318,8 +318,8 @@ select, select option  {
 }
 
 .single-product .halfchild img {
-    padding-top: 20px;
-    padding-bottom: 20;
+    padding-block-start: 20px;
+    padding-block-end: 20;
 }
 
 .single-product .halfchild {
