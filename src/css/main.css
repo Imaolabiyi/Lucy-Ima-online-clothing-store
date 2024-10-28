@@ -1,3 +1,12 @@
+:root {
+    --color-background: black;
+    --color-text: antiquewhite;
+    --color-primary: #333;
+    --color-secondary: #949393;
+    --color-hover: #563434;
+    --color-highlight: #5fa387;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +16,8 @@
 }
 
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', sans-serif;
-    background: black url("/ecommerce-store/images/header/headerprod.jpg") no-repeat center fixed;
-}
+    background: var(--color-background) url("../images/header/headerprod.jpg") no-repeat center fixed;
+    color: var(--color-text);
 
 a {
     text-decoration: none;
@@ -23,12 +31,12 @@ a:hover {
 h1 {
     font-size: 35px;
     line-height: 50px;
-    margin-bottom: 25px;
+    margin-block-end: 25px;
 }
 
 h2 {
     text-align: center;
-    margin-top: 25px;
+    margin-block-start: 25px;
 }
 
 h4 {
@@ -42,13 +50,13 @@ h4 {
 }
 
 .headerimg {
-    max-width: 1300px;
+    max-inline-size: 1300px;
     padding: 250px 100px;
 }
 
 nav {
     flex: 1;
-    text-align: right;
+    text-align: end;
 }
 
 nav ul {
@@ -57,7 +65,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin-right: 20px;
+    margin-inline-end: 20px;
 }
 
 .toggle {
@@ -69,14 +77,14 @@ nav ul li {
 }
 
 .container {
-    max-width: 1300px;
+    max-inline-size: 1300px;
     margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-inline-start: 25px;
+    padding-inline-end: 25px;
 }
 
 .child {
-    margin: 30px auto;
+    margin: 5px auto;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -85,67 +93,62 @@ nav ul li {
 
 .halfchild {
     flex-basis: 50%;
-    min-width: 300px;
-    margin-top: 20px;
+    min-inline-size: 300px;
+    margin-block-start: 20px;
 }
 
 .halfchild img {
-    max-width: 100%;
+    max-inline-size: 100%;
     padding: 50px 0;
 }
 
 .btn {
-    display: inline-block;
-    background: #949393;
-    padding: 8px 30px;
-    margin: 30px 0;
-    border-radius: 30px;
-    transition: background 0.5s;
+    background: var(--color-secondary);
+}
 }
 
 .btn:hover {
-    background: #563434;
-    text-decoration: none;
+    background: var(--color-hover);
 }
 
 .header {
-    background-color: #333;
+    background-color: var(--color-primary);
 }
 
 .line1 {
     margin: 15px auto;
     border-radius: 10px;
-    width: 90px;
-    height: 5px;
+    inline-size: 90px;
+    block-size: 5px;
     background-color: antiquewhite;
 }
 
 .small-container {
-    max-width: 1380px;
+    max-inline-size: 1380px;
     margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-inline-start: 25px;
+    padding-inline-end: 25px;
 }
 
 .childprods {
     flex-basis: 25%;
     padding: 10px;
-    min-width: 200px;
-    margin-bottom: 50px;
+    min-inline-size: 200px;
+    margin-block-end: 50px;
     transition: transform 0.5s;
 }
 
 .childprods img {
-    width: 100%;
+    inline-size: 100%;
 }
 
 .childprods p {
     font-size: 15px;
-    text-align: right;
+    text-align: end;
 }
 
 .rating .fa {
-    color: #5fa387;
+    color: var(--color-highlight);
 }
 
 .childprods:hover {
@@ -165,9 +168,9 @@ nav ul li {
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    margin-bottom: 40px;
-    width: 9em;
-    height: 2em;
+    margin-block-end: 40px;
+    inline-size: 9em;
+    block-size: 2em;
 }
 
 .offer {
@@ -184,7 +187,7 @@ nav ul li {
 }
 
 .testimonial {
-    margin-top: 100px;
+    margin-block-start: 100px;
 }
 
 .testimonial .testchild {
@@ -197,13 +200,13 @@ nav ul li {
 
 .testchild {
     flex-basis: 30%;
-    min-width: 250px;
-    margin-bottom: 30px;
+    min-inline-size: 250px;
+    margin-block-end: 30px;
 }
 
 .testimonial .testchild img {
-    width: 50px;
-    margin-top: 20px;
+    inline-size: 50px;
+    margin-block-start: 20px;
     border-radius: 50%;
 }
 
@@ -230,11 +233,11 @@ nav ul li {
 }
 
 .logo {
-    width: 160px;
+    inline-size: 160px;
 }
 
 .logo img {
-    width: 100%;
+    inline-size: 100%;
 }
 
 .footer {
@@ -244,18 +247,18 @@ nav ul li {
 }
 
 .footer h3 {
-    margin-bottom: 1em;
+    margin-block-end: 1em;
 }
 
 .belowfooter {
     text-align: center;
-    border-top: 3px solid rgb(66, 66, 66);
-    padding-top: 2em;
+    border-block-start: 3px solid rgb(66, 66, 66);
+    padding-block-start: 2em;
 }
 
 .footerChild1, .footerChild2 {
-    min-width: 250px;
-    margin-bottom: 20px;
+    min-inline-size: 250px;
+    margin-block-end: 20px;
 }
 
 .footerChild1 {
@@ -264,8 +267,8 @@ nav ul li {
 }
 
 .footerChild1 img {
-    width: 180px;
-    margin-bottom: 20px;
+    inline-size: 180px;
+    margin-block-end: 20px;
 }
 
 .footerChild2 {
@@ -273,11 +276,11 @@ nav ul li {
 }
 
 .footerChild2 img {
-    width: 250px;
+    inline-size: 250px;
 }
 
 .footerChild2 p {
-    text-align: right;
+    text-align: end;
     font-size: 14px;
 }
 
@@ -293,16 +296,16 @@ select, select option  {
 }
 
 .page-btn {
-    margin-bottom: 35px;
+    margin-block-end: 35px;
     text-align: center;
 }
 
 .page-btn span {
     display: inline-block;
     background-color: black;
-    margin-left: 10px;
-    width: 40px;
-    height: 40px;
+    margin-inline-start: 10px;
+    inline-size: 40px;
+    block-size: 40px;
     text-align: center;
     line-height: 40px;
     cursor: pointer;
@@ -314,11 +317,12 @@ select, select option  {
 }
 
 .single-product {
-    margin-top: 80px;
+    margin-block-start: 80px;
 }
 
 .single-product .halfchild img {
-    padding: 0;
+    padding-block-start: 20px;
+    padding-block-end: 20;
 }
 
 .single-product .halfchild {
@@ -334,12 +338,12 @@ select, select option  {
 .single-product select {
     display: inline-block;
     padding: 10px;
-    margin-top: 20px;
+    margin-block-start: 20px;
 }
 
 .single-product input {
-    width: 50px;
-    height: 38px;
+    inline-size: 50px;
+    block-size: 38px;
     margin: 10px 35px 10px 10px;
     text-align: center;
     font-size: 16px;
@@ -352,7 +356,7 @@ select, input {
 
 .single-product .fa {
     color: black;
-    margin-left: 10px;
+    margin-inline-start: 10px;
 }
 
 .small-img-child {
@@ -370,15 +374,15 @@ select, input {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: calc(100vh - 120px);
+    min-block-size: calc(100vh - 120px);
 }
 
 .formPage .btn{
     display: block;
     margin: 20px 0;
     text-align: center;
-    width: 250px;
-    height: 35px;
+    inline-size: 250px;
+    block-size: 35px;
     cursor: pointer;
 }
 
@@ -387,8 +391,8 @@ select, input {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 350px;
-    height: 500px;
+    inline-size: 350px;
+    block-size: 500px;
     background-color: #333;
     border-radius: 5px;
 }
@@ -397,8 +401,8 @@ select, input {
     color: #333;
     border-radius: 15px;
     text-align: center;
-    height: 35px;
-    width: 280px;
+    block-size: 35px;
+    inline-size: 280px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -421,13 +425,13 @@ select, input {
     }
     .navbar .cart {
         position: relative;
-        right: 50px;
+        inset-inline-end: 50px;
     }
     .nav-menu {
         position: absolute;
-        left: 0;
-        top: 70px;
-        right: 0;
+        inset-inline-start: 0;
+        inset-block-start: 70px;
+        inset-inline-end: 0;
     }
     nav ul li {
         margin: 0 auto;
@@ -446,7 +450,7 @@ select, input {
         font-size: 32px;
     }
     .child .logo img {
-        margin: 20px 20px;
+        margin: 2% 20px;
     }
 }
 
@@ -458,6 +462,6 @@ select, input {
         flex-basis: 100%;
     }
     .single-product .child {
-        text-align: left;
+        text-align: start;
     }
 }

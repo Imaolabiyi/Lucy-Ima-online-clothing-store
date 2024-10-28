@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucy and Ima Store: Where Fashion Meets Comfort.</title>
+    <!-- Ensure the relative paths to the CSS files are correct -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/svg+xml" href="./images/header/favicon.svg">
+</head>
+
+<body>
+    <!-- Add alt attribute to image for accessibility -->
+    <img src="./images/header/headerprod.jpg" alt="Header Image" style="display: none;">
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <!-- Ensure the correct path for your logo image -->
+                    <a href="./index.html"><img src="./images/header/complogo.png" alt="Company Logo" width="225px"></a>
+                </div>
+                <nav>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="index.html">Home</a></li>
+                        <li class="nav-item"><a href="products.html">Products</a></li>
+                        <li class="nav-item"><a href="#footer">Contact Us</a></li>
+                        <li class="nav-item"><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <!-- Added alt attribute for accessibility -->
+                <a href="./cart.html"><img class="cart" src="./images/header/cart.svg" alt="Cart Icon"></a>
+                <div class="toggle"><i class="fa fa-bars"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Brands section -->
+    <div class="brands">
+        <div class="small-container">
+            <div class="child">
+                <!-- Repeating logo divs, alt attributes added -->
+                <div class="logo"><img src="./images/logos/logo-adidas.png" alt="Adidas Logo"></div>
+                <div class="logo"><img src="./images/logos/logo-nike.png" alt="Nike Logo"></div>
+                <div class="logo"><img src="./images/logos/logo-lv.png" alt="Louis Vuitton Logo"></div>
+                <div class="logo"><img src="./images/logos/logo-versace.png" alt="Versace Logo"></div>
+                <div class="logo"><img src="./images/logos/logo-puma.png" alt="Puma Logo"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Catalog section -->
+    <div class="small-container">
+        <div class="child child-2">
+            <h2>Catalog</h2>
+            <label for="sort-options">Sort By:</label>
+            <select id="sort-options">
+                <option disabled selected>Sort By</option>
+                <option>Price</option>
+                <option>Popularity</option>
+                <option>Rating</option>
+            </select>
+        </div>
+        <div class="child">
+            <!-- Products listing section -->
+            <!-- Ensure correct alt attributes for product images -->
+            <div class="childprods">
+                <a href="./product_details.html"><img src="./images/products/product-1.webp" alt="Black T-Shirt for Women"></a>
+                <h4>Black T-Shirt for Women</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$59.99</p>
+            </div>
+            <div class="childprods">
+                <a href="./product_details.html"><img src="./images/products/product-2.webp" alt="Men's Casual Hoodies"></a>
+                <h4>Men's Casual Hoodies</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$70.99</p>
+            </div>
+            <!-- More products... -->
+            <div class="childprods">
+                <a href="./product_details.html"><img src="./images/products/product-12.webp" alt="Red Socks"></a>
+                <h4>Red Socks</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$29.99</p>
+            </div>
+        </div>
+        <!-- Pagination buttons -->
+        <div class="page-btn">
+            <span>&#8592;</span>
+            <span><a href="./products.html">1</a></span>
+            <span><a href="./products.html">2</a></span>
+            <span><a href="./products.html">3</a></span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="child">
+                <div class="footerChild1">
+                    <img src="./images/header/complogo.png" alt="Company Logo">
+                    <h4>Mail us at: <a href="mailto:Imaolabiyi200@gmail.com">Imaolabiyi200@gmail.com</a></h4>
+                </div>
+                <div class="footerChild2">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Payments</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">FAQ Topics</a></li>
+                    </ul>
+                </div>
+                <div class="footerChild2">
+                    <h3>Our Socials</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/sharonolabiyi/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/sharon.offiong" target="_blank">Facebook</a></li>
+                        <li><a href="https://x.com/ImaOlabiyi/" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/in/ima-olabiyi-okon/" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="footerChild2">
+                    <h3>Registered Office</h3>
+                    <ul>
+                        <li>Apartment A13, Floor 15,</li>
+                        <li>Ganaja Junction,</li>
+                        <li>Lokoja.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="belowfooter">
+                © Lucy & Ima Co. Associates, 2024 <br> Where Fashion Meets Comfort, All rights reserved.
+            </div>
+        </div>
+    </div>
+
+    <!-- Ensure the path to your JavaScript file is correct -->
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
